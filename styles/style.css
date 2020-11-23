@@ -1,0 +1,445 @@
+/* General */
+
+*{
+  font-family: Courier New;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  background: url(../images/background1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*Forms CSS*/
+
+input[type=text], input[type=password], input[type=email], textarea {
+  width: 100%; /* Full width */
+  padding: 12px 20px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 4px; /* Add a top margin */
+  margin-bottom: 12px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: rgba(255, 255, 255, 0.8);
+}
+button {
+  float: right;
+  background-color: #8A8A8A;
+  color: white;
+  padding: 12px 18px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 95px;
+  font-size: 70%;
+}
+button:hover {
+  background-color: #757575;
+}
+
+
+/* Progress Bars */
+
+progress {
+  width: 86%;
+  height: 5px;
+  margin-left: 7%;
+  margin-top: 4%;
+
+}
+progress::-webkit-progress-bar {
+  width: 90%;
+  height: 5px;
+  margin-left: 7%;
+  margin-top: 2%;
+  margin-bottom: .5%;
+}
+progress::-webkit-progress-value {
+  width: 90%;
+  height: 5px;
+  margin-left: 7%;
+  margin-top: 2%;
+  margin-bottom: .5%;
+}
+progress::-moz-progress-bar {
+  width: 90%;
+  height: 5px;
+  margin-left: 7%;
+  margin-top: 2%;
+  margin-bottom: .5%;
+}
+
+
+/* Universal Containers */
+
+.container {
+  width: 70%;
+  margin: 8% 0 0 15%;
+  padding: 2% 3% 2% 3%;
+  overflow: auto;
+  border: 3px solid black;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 0;
+}
+.container h1 {
+  padding-bottom: 20px;
+  font-size: 225%;
+}
+.container h2 {
+  padding-bottom: 15px;
+}
+.container h4 {
+  padding-bottom: 7px;
+}
+.container ul {
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+.container li {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.flex_container {
+  display: flex;
+  width: 70%;
+  margin: 1% 15%;
+  overflow: auto;
+}
+
+
+/* NavBar */
+
+nav{
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  overflow: auto;
+  z-index: 99;
+  border-bottom: 3px solid black;
+  background-color: rgba(255, 255, 255);
+  margin-left: -8px;
+}
+.cretn_logo {
+width: 180px;
+height: 75px;
+margin-left: 10%;
+}
+
+.links{
+width: 80%;
+position: relative;
+margin-left: 2.5%;
+margin-top: 28px;
+
+}
+.links li {
+  position: relative;
+  float:left;
+  list-style: none;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.links li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+.links li a:hover {
+  color: #757575;
+}
+.logout {
+  position: absolute;
+  float: right;
+  margin-top: 5px;
+  right: 100px;
+  top: 3px;
+}
+.logout a{
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+#contact {
+  border-bottom: 3px solid #757575;
+}
+#donate {
+  border-bottom: 3px solid #757575;
+}
+#home {
+  border-bottom: 3px solid #757575;
+}
+
+
+/* Login Page */
+
+#login_container {
+  position: fixed;
+  width: 40%;
+  margin: 15% 0 0 30%;
+  -webkit-box-shadow: 5px 6px 11px 0px rgba(0,0,0,0.83);
+  box-shadow: 5px 6px 11px 0px rgba(0,0,0,0.83);
+}
+span#psw {
+  font-size: 75%;
+  text-decoration: underline;
+  font-style: italic;
+  color: black;
+}
+
+/* Register Page */
+
+#register_box {
+  position: relative;
+  width: 50%;
+  margin: 10% 0 5% 25%;
+  -webkit-box-shadow: 5px 6px 11px 0px rgba(0,0,0,0.83);
+  box-shadow: 5px 6px 11px 0px rgba(0,0,0,0.83);
+  padding: 1.5% 3% 1.5% 3%;
+  overflow: auto;
+  border-radius: 4px;
+  border: 3px solid black;
+  z-index: 2;
+  font-weight: bold;
+}
+#register_box h1 {
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+#register_box h2 {
+  padding-bottom: 15px;
+}
+#register_box ul {
+  padding-left: 30px;
+}
+#register_box li {
+  padding-bottom: 20px;
+}
+
+
+/* Home Page */
+
+#disk_space{
+  padding-left: 10px;
+}
+span#total_memory {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+#movie_flex {
+  width: 49%;
+  margin: 0 1% 0 0;
+}
+#tv_flex {
+  width: 49%;
+  margin: 0 0 0 1%;
+}
+
+/* Donate Page*/
+span#total_donate {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 20px;
+}
+.qr_code {
+  display: flex;
+  width: 95%;
+}
+#lifetime{
+  font-size: 1.25em;
+  padding-top: 85px;
+  margin-left: 10%;
+}
+#qr_image{
+  margin-left: 30%;
+}
+#left_flex {
+  width: 48%;
+  margin: .5% 1% 0 1%;
+}
+#right_flex {
+  width: 48%;
+  margin: .5% 1% 0 1%;
+}
+#right_flex span {
+  font-size: 75%;
+  padding-left: 4%;
+}
+#left_flex span {
+  font-size: 75%;
+  padding-left: 4%;
+}
+
+#green {
+  color: green;
+}
+
+/*Contact Page*/
+
+#contact_container {
+  margin-top: 12%;
+}
+
+
+/* SmartPhone CSS */
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    background: url(../images/background1.jpg) no-repeat cover center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/* Universal Containers */
+  .container {
+    width: 95%;
+    margin: 17% 0 0 2.5%;
+  }
+  .container h1 {
+    padding-bottom: 7px;
+    font-size: 133%;
+  }
+  .container h2 {
+    padding-bottom: 5px;
+    font-size: 125%;
+  }
+  .container h4 {
+    padding-bottom: 3px;
+  }
+  .container ul {
+    padding-bottom: 0px;
+    padding-left: 30px;
+  }
+  .container li {
+    padding-bottom: 15px;
+  }
+  .flex_container {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1% 0;
+  }
+
+  /* NavBar */
+  nav{
+    height: 45px;
+  }
+
+  .cretn_logo {
+  position: absolute;
+  width: 87.48px;
+  height: 36.45px;
+  margin-left: 2%;
+  }
+  .links{
+  width: 100%;
+  margin-left: 14%;
+  margin-top: 0px;
+  }
+  .links li {
+    margin-left: 4%;
+    margin-right: 6%;
+    padding-left: 0;
+    margin-top: 1.8%;
+    margin-bottom: 1.5%;
+  }
+  .links li a {
+    font-size: .5em;
+  }
+  .logout {
+    right: 4%;
+    top: 1%;
+  }
+  .logout a{
+    font-size: .65em;
+  }
+  #contact {
+    border-bottom: 1.5px solid #757575;
+  }
+  #donate {
+    border-bottom: 1.5px solid #757575;
+  }
+  #home {
+    border-bottom: 1.5px solid #757575;
+  }
+
+
+  /* Login Page */
+
+  #login_container {
+    width: 90%;
+    margin: 35% 0 0 2.5%;
+  }
+
+  /* Register Page */
+
+  #register_box {
+    position: relative;
+    width: 90%;
+    margin: 25% 0 0 2.5%;
+  }
+  #register_box h1 {
+    padding-bottom: 10px;
+  }
+  #register_box h2 {
+    padding-bottom: 7.5px;
+  }
+  #register_box ul {
+    padding-left: 20px;
+  }
+
+  /* Home Page */
+  #disk_space{
+    padding-left: 5px;
+  }
+  #movie_flex {
+    width: 88%;
+    margin: 3% 6% 3% 6%;
+  }
+  #tv_flex {
+    width: 88%;
+    margin: 1.5% 6% 1.5% 6%;
+  }
+
+  /* Donate Page*/
+  .qr_code {
+    flex-wrap: wrap;
+  }
+  #lifetime{
+    text-align: center;
+    width: 90%;
+    font-size: 1.25em;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    margin-left: 5%;
+  }
+  #qr_image{
+    margin-left: 18%;
+  }
+
+  /*Contact Page*/
+
+  #contact_container {
+    margin-top: 35%;
+  }
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlexQ</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body>
+
+<!-- NavBar -->
+    <nav>
+      <img class="cretn_logo"src="images/cretanq.png" alt="Cretan Logo">
+
+    </nav>
+
+<!-- Registration Pop-up -->
+    <div class ="container" id="register_box">
+        <h1>Registration</h1>
+
+          <p>-- Fill in this information to create an account.</p>
+          <p>-- An email will be sent to you regarding your credentials.</p>
+          <br>
+
+
+        <form action="scripts/php/registration.inc.php" method="post" autocomplete="off">
+
+        <label for="username"><b>First Name</b></label>
+        <input type="text" placeholder="First.." name="first" required>
+
+        <label for="username"><b>Last Name</b></label>
+        <input type="text" placeholder="Last.." name="last" required>
+
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Username.." name="username" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email.." name="email" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password.." name="pwd" required>
+
+        <label for="password"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password.." name="pwd-repeat" required>
+
+        <button type="submit" name="register_submit" value="submit">Register!</button>
+        <button onclick="location.href = 'login.html';">Close</button>
+      </form>
+    </div>
+
+
+  </body>
+</html>

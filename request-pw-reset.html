@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body>
+
+<!-- NavBar -->
+    <nav>
+      <img class="cretn_logo"src="images/cretanq.png" alt="Cretan Logo">
+
+    </nav>
+
+<!-- Password Reset Form Email Request -->
+    <div class="container" id="login_container">
+        <h1>Reset your Password</h1>
+        <ul>
+          <li>Enter your email below.</li>
+          <li>An email will be sent to you with instructions on how to reset your password.</li>
+        </ul>
+      <form action="scripts/php/request-pw-reset.inc.php" method="post">
+        <input type="text" placeholder="Enter email here.." name="email" required>
+        <button type="submit" name="reset_request_submit" value="submit">Submit!</button>
+      </form>
+    </div>
+  </body>
+</html>
